@@ -1,6 +1,5 @@
 package com.projeto.petfinder.model;
 
-
 import lombok.*;
 
 @Data

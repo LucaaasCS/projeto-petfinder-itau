@@ -4,7 +4,7 @@ import com.projeto.petfinder.model.PositionResponse;
 import com.projeto.petfinder.model.SensorData;
 import com.projeto.petfinder.service.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,11 +23,3 @@ public class SensorController {
         return ResponseEntity.ok(positionResponse);
     }
 }
-
-/*@PostMapping(value = "/location", produces = "application/json")
-public ResponseEntity<PositionResponse> getLocationFromSensor(@RequestBody SensorData sensorData) {
-    var positionResponse = sensorService.getGeolocation(sensorData.getLatitude(), sensorData.getLongitude());
-    //return ResponseEntity.ok(positionResponse);
-    System.out.println(positionResponse);
-    return ResponseEntity.ok(positionResponse);
-}*/
